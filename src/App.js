@@ -32,13 +32,10 @@ class App extends React.Component {
               id: snapShot.id,
               ...snapShot.data()
             }
-          }, () => {
-            //tämän funktion voi poistaa
-            console.log(this.state);
           }
           );
+          console.log(this.state);
         });
-        console.log(this.state);
       }
       else {
         this.setState({currentUser: userAuth});
